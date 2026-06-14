@@ -1,0 +1,17 @@
+# 1) Mixed-basis / Y check across single gallery examples
+  cnot             mixed-basis/Y generator present? False
+  three_cnots      mixed-basis/Y generator present? False
+  move_rotation    mixed-basis/Y generator present? False
+  steane_encoding  mixed-basis/Y generator present? False
+  cz               mixed-basis/Y generator present? True
+
+
+# 2) Two INDEPENDENT cnots in one block graph (disjoint support)
+  union num_ports = 8 (two 4-port cnots)
+
+=== two_independent_cnots ===
+  generators (16): ['XXXXXXII', 'XXXIXXIX', 'XZXIXZII', 'XZXZXIIZ', 'XXIXXXXI', 'XXIIXXXX', 'XZIIXZXI', 'XZIZXIXZ', 'ZXIXZXII', 'ZXIIZXIX', 'ZZIIZZII', 'ZZIZZIIZ', 'ZXZXIXZI', 'ZXZIIXZX', 'ZZZIIZZI', 'ZZZZIIZZ']
+  any Y on a port? False   any mixed-basis generator? True
+  incompatible pairs: 96   min #cliques: 4
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE (sort canonicalizes)

@@ -1,0 +1,10 @@
+
+# two_independent_cnots  (search_small_area=False)
+  distinct #cliques across strategies: [4]
+  distinct PARTITIONS across strategies: 1
+  -> partition-stable; #952 sort suffices
+
+# two_independent_cnots  (search_small_area=True)
+  distinct #cliques across strategies: [3, 4]
+  distinct PARTITIONS across strategies: 3
+  -> REPARTITIONS across strategies; sort canNOT fix this

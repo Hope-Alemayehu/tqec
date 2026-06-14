@@ -1,0 +1,28 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\ABN\tqec\.venv\Scripts\python.exe
+rootdir: C:\Users\ABN\tqec
+configfile: pyproject.toml
+plugins: cov-7.1.0, timeout-2.4.0
+timeout: 30.0s
+timeout method: thread
+timeout func_only: False
+collecting ... collected 20 items / 4 deselected / 16 selected
+
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[1-cnot] PASSED [  6%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[1-move_rotation] PASSED [ 12%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[1-steane_encoding] PASSED [ 18%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[1-three_cnots] PASSED [ 25%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[2-cnot] PASSED [ 31%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[2-move_rotation] PASSED [ 37%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[2-steane_encoding] PASSED [ 43%]
+determinism_audit/test_determinism.py::test_inprocess_regeneration_stable[2-three_cnots] PASSED [ 50%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[1-cnot] PASSED [ 56%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[1-move_rotation] PASSED [ 62%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[1-steane_encoding] PASSED [ 68%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[1-three_cnots] PASSED [ 75%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[2-cnot] PASSED [ 81%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[2-move_rotation] PASSED [ 87%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[2-steane_encoding] PASSED [ 93%]
+determinism_audit/test_determinism.py::test_cross_hashseed_stable[2-three_cnots] PASSED [100%]
+
+================ 16 passed, 4 deselected in 655.57s (0:10:55) =================

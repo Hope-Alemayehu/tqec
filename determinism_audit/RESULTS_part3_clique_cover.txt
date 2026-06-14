@@ -1,0 +1,54 @@
+# Current gallery examples (open ports)
+
+=== cnot ===
+  generators (4): ['XXXI', 'XIXX', 'ZIZI', 'ZZIZ']
+  incompatible pairs: 4
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE -> sorting fully canonicalizes; #952 complete for this case
+
+=== three_cnots ===
+  generators (6): ['XXXXII', 'XXIXIX', 'XIIXXI', 'ZIIZII', 'IZIZZI', 'IZZIIZ']
+  incompatible pairs: 8
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE -> sorting fully canonicalizes; #952 complete for this case
+
+=== move_rotation ===
+  generators (2): ['XX', 'ZZ']
+  incompatible pairs: 1
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE -> sorting fully canonicalizes; #952 complete for this case
+
+=== steane_encoding ===
+  generators (7): ['IIXXXIX', 'IIZZIZI', 'IIIIZZZ', 'IXIXXXI', 'XIIXIXX', 'IZIZZZI', 'ZIIZZII']
+  incompatible pairs: 12
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE -> sorting fully canonicalizes; #952 complete for this case
+
+=== cz ===
+  generators (4): ['XZXI', 'XIXZ', 'ZIZI', 'ZXIX']
+  incompatible pairs: 4
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 1
+  verdict: UNIQUE -> sorting fully canonicalizes; #952 complete for this case
+
+
+# Synthetic boundary case (NOT reachable from the current gallery)
+# Two independent, disjoint-support incompatible pairs: X/Z on ports {0,1}
+# and X/Z on ports {2,3}. The incompatibility-complement graph is then
+# bipartite but DISCONNECTED (two separate edges), so it admits two
+# genuinely different minimum 2-clique covers. Sorting each cover and the
+# covers themselves yields two DIFFERENT canonical results, so the #952
+# sort cannot make a generator set with this structure deterministic.
+
+=== synthetic_disconnected_repartition ===
+  generators (4): ['XXII', 'ZZII', 'IIXX', 'IIZZ']
+  incompatible pairs: 2
+  minimum #cliques (chromatic number of complement): 2
+  distinct minimum clique-cover PARTITIONS: 2
+  verdict: MULTIPLE -> genuine repartition; sort fix does NOT make this deterministic
+    partition: [['IIXX', 'XXII'], ['IIZZ', 'ZZII']]
+    partition: [['IIXX', 'ZZII'], ['IIZZ', 'XXII']]
